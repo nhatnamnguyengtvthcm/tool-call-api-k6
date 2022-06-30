@@ -98,12 +98,12 @@ export default function () {
     console.log("******fd****: ", fd);
     console.log("******fd****: ", fd.body());
     let params = {
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic c2FsZXNfdGVzdDpzYWxlc190ZXN0',
-            'Content-Type': 'multipart/form-data;boundary=' + fd.boundary,   
-            // 'Content-Type': 'x-www-form-urlencoded',   
-        }
+        // headers: {
+        //     'Content-Type': 'application/json',
+        //     'Authorization': 'Basic c2FsZXNfdGVzdDpzYWxlc190ZXN0',
+        //     'Content-Type': 'multipart/form-data;boundary=' + fd.boundary,   
+        //     // 'Content-Type': 'x-www-form-urlencoded',   
+        // }
     }
 
     let res = http.post('https://crm-test-lumiere.masterisehomes.com/vin/booking-info', fd.body(), params)
