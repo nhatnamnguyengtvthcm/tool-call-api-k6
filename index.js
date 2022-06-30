@@ -106,7 +106,7 @@ export default function () {
         // }
     }
 
-    let res = http.post('https://crm-test-lumiere.masterisehomes.com/vin/booking-info', fd.body(), params)
+    // let res = http.post('', fd.body(), params)
 
     let isBookingSuccessfully;
     group('booking', function () {
